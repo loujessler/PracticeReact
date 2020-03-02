@@ -1,0 +1,15 @@
+.header{
+  grid-area: header;
+  background: linear-gradient(95deg, rgba(237, 207, 187, 0.5), rgba(207, 225, 233, 0.6));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1%;
+  margin-top: 10px;
+}
+.header span{
+
+}
+.header img{
+  width: 20px;
+}

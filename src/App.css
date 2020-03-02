@@ -1,7 +1,23 @@
+@font-face {
+	font-family: 'Becker';
+	src: url('./Becker.otf') format('truetype');
+	/* font-weight: normal; */
+	/* font-style: normal; */
+  font-size: 4px;
+}
+
+body{
+  background-color: black;
+}
+
 .app-wrapper{
+  font-family: 'Becker';
+  /* letter-spacing: 5px; */
+  font-size: 13px;
   display: grid;
 
-  width: 1200px;
+
+  max-width: 1000px;
   margin: 0 auto;
 
   grid-template-areas:
@@ -12,27 +28,4 @@
   grid-template-rows: 60px 1fr 100px;
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
-}
-
-.header{
-  grid-area: header;
-  background-color: green;
-}
-.header img{
-  width: 20px;
-}
-
-.nav{
-  grid-area: nav;
-  background-color: blue;
-}
-
-.profile{
-  grid-area: profile;
-  background-color: yellow;
-}
-
-.footer{
-  grid-area: footer;
-  background-color: blueviolet;
 }

@@ -1,0 +1,5 @@
+footer{
+  grid-area: footer;
+  background-color: darkgray;
+  /* background: linear-gradient(180deg, rgba(237, 207, 187, 0.3), rgba(207, 225, 233, 0.3)); */
+}
