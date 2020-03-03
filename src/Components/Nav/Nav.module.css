@@ -12,7 +12,6 @@
   grid-auto-rows: 28px;
   grid-gap: 10px;
   align-items: center;
-  margin-top: 5%;
   margin-top: 15vh;
 }
 .item{
@@ -40,9 +39,8 @@ a span{
 
 a:hover{
   text-decoration: none;
-  color: darkcyan;
   cursor: pointer;
   border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
   color: whitesmoke;
-  background: radial-gradient( 90% 20%,  firebrick, black);
+  background: radial-gradient( 80% 20%,  firebrick, black);
 }
