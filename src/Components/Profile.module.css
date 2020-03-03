@@ -1,7 +1,7 @@
 .profile{
   grid-area: profile;
-  background: linear-gradient(25deg, rgba(237, 207, 187, 0.5), rgba(207, 225, 233, 0.6));
-  border-radius: 1%;
+  background: linear-gradient(65deg, rgba(175, 196, 190, 0.5), rgba(69, 42, 75, 0.6));
+  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
 }
 
 .bodyProfile{
@@ -13,7 +13,7 @@
 
 .headerimg {
   /* width: 60vw; */
-  border-radius: 1%;
+  border-radius: 10px 10px 0px 0px; /*Закругляем уголки*/
   height: 15vh;
   overflow: hidden;
   text-align: center;
@@ -38,8 +38,8 @@
 
 .avatar{
   grid-area: avatar;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-image: url(https://lastfm.freetls.fastly.net/i/u/ar0/2492cbbdccde0e947db8fa4e4d96b17c.jpg);
   background-size: cover;
@@ -55,4 +55,53 @@
   grid-auto-rows: 28px;
   grid-gap: 5px;
   align-items: center;
+}
+
+.form__field {
+  /* font-family: inherit; */
+  width: 96%;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  color: black;
+  padding: 1% 2%;
+  background-color: #F9F8F6;
+  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+  transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.4s ease-in-out; /** Firefox **/
+    -o-transition: all 0.4s ease-in-out; /** Opera **/
+}
+
+.form__field:focus {
+  border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
+  padding-bottom: 30px;
+  transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.4s ease-in-out; /** Firefox **/
+    -o-transition: all 0.4s ease-in-out; /** Opera **/
+  border: 5;
+}
+
+.post{
+  display: grid;
+  grid-template-areas:
+  "avatar item"
+  ;
+  grid-template-columns: 1fr 10fr;
+  grid-column-gap: 25px;
+  align-items: center;
+  padding: 1% 2%;
+  margin: 5px auto;
+  background-color: #F9F8F6;
+  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+}
+
+.post .avatar{
+  width: 75px;
+  height: 75px;
+}
+
+.item{
+  grid-area: item;
 }

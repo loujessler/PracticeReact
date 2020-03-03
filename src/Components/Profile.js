@@ -20,15 +20,20 @@ const Profile = () => {
           </div>
         </div>
         <div>
-          My posts
-          <div>New post
-            <input type="text"/>
+          <div>
+            <input type="input" className={s.form__field} placeholder="New post" name="New post" id='New post' required />
+
           </div>
         </div>
         <div className={s.posts}>
-          <div className={s.item}>Post1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est hic, porro nesciunt cumque rerum sapiente velit, dolorem fugiat, quo eos quibusdam sit, tempora rem cum quas. Quis maxime, totam omnis.</div>
-          <div className={s.item}>Post2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam nesciunt necessitatibus, animi soluta a facere amet numquam tempore voluptas! Voluptas, consectetur deserunt est similique! Itaque vel modi dicta rerum officia.</div>
-        </div>
+          <div className={s.post}>
+            <div className={s.avatar}></div>
+            <div className={s.item}>Post1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est hic, porro nesciunt cumque rerum sapiente velit, dolorem fugiat, quo eos quibusdam sit, tempora rem cum quas. Quis maxime, totam omnis.</div>
+          </div>
+          <div className={s.post}>
+            <div className={s.avatar}></div>
+            <div className={s.item}>Post1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est hic, porro nesciunt cumque rerum sapiente velit, dolorem fugiat, quo eos quibusdam sit, tempora rem cum quas. Quis maxime, totam omnis.</div>
+          </div>        </div>
       </div>
     </div>
 );
