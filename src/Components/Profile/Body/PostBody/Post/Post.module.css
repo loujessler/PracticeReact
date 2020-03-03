@@ -13,19 +13,53 @@
   "avatar item"
   ;
   grid-template-columns: 1fr 10fr;
-  grid-column-gap: 25px;
+  grid-column-gap: 10px;
   align-items: center;
   padding: 1% 2%;
   margin: 5px auto;
-  background-color: #F9F8F6;
-  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+  /* background-color: #F9F8F6;
+  border-radius: 10px 10px 10px 10px;  */
 }
 
 .post .avatar{
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
 }
 
 .item{
   grid-area: item;
+  padding: 2% 2%;
+  background-color: #F9F8F6;
+  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+}
+
+.like{
+  float: right;
+  background-color: #F9F8F6;
+  align-items: center;
+}
+
+
+.like button{
+  float: right;
+  outline: none;
+  border: none;
+  background-color: #F9F8F6;
+  cursor: pointer;
+}
+
+.like button img:hover{
+  filter: brightness(1.5);
+  transform: rotate(1080deg);
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.4s ease-in-out; /** Firefox **/
+    -o-transition: all 0.4s ease-in-out; /** Opera **/
+
+}
+
+.like button img{
+  width: 11px;
+  height: 11px;
 }

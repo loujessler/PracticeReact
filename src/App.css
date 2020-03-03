@@ -1,31 +1,34 @@
 @font-face {
-	font-family: 'Astroneer';
-	src: url('./Astroneer.ttf') format('truetype');
-	/* font-weight: normal; */
-	/* font-style: normal; */
-  font-size: 4px;
+    font-family: 'Astroneer';
+    src: url('./Astroneer.ttf') format('truetype');
+    /* font-weight: normal; */
+    /* font-style: normal; */
+    font-size: 4px;
 }
 
-body{
-  background-color: rgba(225, 216, 213, 0.1);
+body {
+    background-color: rgba(213, 223, 220, 0.3);
 }
 
-.app-wrapper{
-  font-family: 'Astroneer';
-  /* letter-spacing: 5px; */
-  font-size: 14px;
-  display: grid;
+.app-wrapper {
+    font-family: 'Astroneer';
+    /* letter-spacing: 5px; */
+    font-size: 14px;
+    display: grid;
 
 
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 
-  grid-template-areas:
-  "header header"
-  "nav profile"
-  "footer footer";
+    grid-template-areas: "header header" "nav content" "footer footer";
 
-  grid-template-rows: 60px 1fr 100px;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
+    grid-template-rows: 60px 1fr 100px;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
 }
+
+.gridContent {
+    grid-area: content;
+}
+
+

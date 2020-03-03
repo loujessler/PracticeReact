@@ -1,9 +1,9 @@
 .nav{
   grid-area: nav;
-
   background-color: rgba(175, 196, 190, 0.5);
   border: 0.5px solid #A69BA9;
   border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+  max-height: 350px;
 }
 
 .nav_box{
@@ -12,7 +12,7 @@
   grid-auto-rows: 28px;
   grid-gap: 10px;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 15vh;
 }
 .item{
   margin-left: 7%;
@@ -39,9 +39,8 @@ a span{
 
 a:hover{
   text-decoration: none;
-  color: darkcyan;
   cursor: pointer;
   border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
   color: whitesmoke;
-  background: radial-gradient( 90% 20%,  firebrick, black);
+  background: radial-gradient( 80% 20%,  firebrick, black);
 }
