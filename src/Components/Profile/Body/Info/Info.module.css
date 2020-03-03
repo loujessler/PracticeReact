@@ -1,0 +1,33 @@
+.info{
+  display: grid;
+  grid-template-areas:
+  "avatar name"
+  "avatar life"
+  ;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 10px;
+  grid-column-gap: 30px;
+  align-items: center;
+}
+
+.avatar{
+  grid-area: avatar;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(https://lastfm.freetls.fastly.net/i/u/ar0/2492cbbdccde0e947db8fa4e4d96b17c.jpg);
+  background-size: cover;
+}
+
+.name{
+  grid-area: name;
+}
+
+.life{
+  grid-area: life;
+  display: grid;
+  grid-auto-rows: 28px;
+  grid-gap: 5px;
+  align-items: center;
+}

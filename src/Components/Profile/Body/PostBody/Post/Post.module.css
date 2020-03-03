@@ -1,0 +1,31 @@
+.avatar{
+  grid-area: avatar;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(https://lastfm.freetls.fastly.net/i/u/ar0/2492cbbdccde0e947db8fa4e4d96b17c.jpg);
+  background-size: cover;
+}
+
+.post{
+  display: grid;
+  grid-template-areas:
+  "avatar item"
+  ;
+  grid-template-columns: 1fr 10fr;
+  grid-column-gap: 25px;
+  align-items: center;
+  padding: 1% 2%;
+  margin: 5px auto;
+  background-color: #F9F8F6;
+  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+}
+
+.post .avatar{
+  width: 75px;
+  height: 75px;
+}
+
+.item{
+  grid-area: item;
+}

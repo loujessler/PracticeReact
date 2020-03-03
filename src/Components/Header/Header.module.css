@@ -1,0 +1,17 @@
+.header{
+  grid-area: header;
+  background: linear-gradient(25deg, rgba(175, 196, 190, 0.5), rgba(69, 42, 75, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #A69BA9;
+  border-top-width: 0px;
+  border-radius: 0px 0px 10px 10px; /*Закругляем уголки*/
+  /* margin-top: 10px; */
+}
+.header span{
+
+}
+.header img{
+  width: 20px;
+}

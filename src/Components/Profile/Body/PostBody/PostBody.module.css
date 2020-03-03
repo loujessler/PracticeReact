@@ -1,0 +1,73 @@
+.formPost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96%;
+  border: 0;
+  outline: 0;
+  color: black;
+  padding: 3px 2%;
+  background-color: #F9F8F6;
+  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+  transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.4s ease-in-out; /** Firefox **/
+    -o-transition: all 0.4s ease-in-out; /** Opera **/
+}
+
+.formPost:focus {align-items: flex-end;}
+
+.form__field {
+  resize: none;
+  overflow: hidden;
+  width: 96%;
+  border: 0;
+  outline: 0;
+  font-size: 0.9rem;
+  color: black;
+  padding: 1% 1%;
+  background-color: #F9F8F6;
+  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+  transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.4s ease-in-out; /** Firefox **/
+    -o-transition: all 0.4s ease-in-out; /** Opera **/
+}
+
+.form__field:focus {
+  border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
+  padding-bottom: 30px;
+  transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.4s ease-in-out; /** Firefox **/
+    -o-transition: all 0.4s ease-in-out; /** Opera **/
+  border: 5;
+  .buttonPost{
+    display: block;
+  }
+}
+
+.buttonPost {
+  outline: none;
+  background-color: white;
+  position: relative;
+  border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+  border: none;
+  color: black;
+  padding: 3px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #D5DFDC;
+}
+
+.buttonPost:hover {
+  background-color: #D5DFDC; /* Green */
+  color: black;
+  outline: none;
+}

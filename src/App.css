@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'Becker';
-	src: url('./Becker.otf') format('truetype');
+	font-family: 'Astroneer';
+	src: url('./Astroneer.ttf') format('truetype');
 	/* font-weight: normal; */
 	/* font-style: normal; */
   font-size: 4px;
@@ -11,9 +11,9 @@ body{
 }
 
 .app-wrapper{
-  font-family: 'Becker';
+  font-family: 'Astroneer';
   /* letter-spacing: 5px; */
-  font-size: 13px;
+  font-size: 14px;
   display: grid;
 
 
