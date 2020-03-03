@@ -1,9 +1,9 @@
 .nav{
   grid-area: nav;
-
   background-color: rgba(175, 196, 190, 0.5);
   border: 0.5px solid #A69BA9;
   border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+  max-height: 350px;
 }
 
 .nav_box{
@@ -13,6 +13,7 @@
   grid-gap: 10px;
   align-items: center;
   margin-top: 5%;
+  margin-top: 15vh;
 }
 .item{
   margin-left: 7%;

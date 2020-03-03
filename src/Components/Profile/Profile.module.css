@@ -6,7 +6,6 @@
 }
 
 .headerimg {
-  /* width: 60vw; */
   border-radius: 10px 10px 0px 0px; /*Закругляем уголки*/
   height: 15vh;
   overflow: hidden;

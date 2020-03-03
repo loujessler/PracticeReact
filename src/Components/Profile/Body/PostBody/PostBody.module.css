@@ -28,23 +28,20 @@
   padding: 1% 1%;
   background-color: #F9F8F6;
   border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
-  transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 0.4s ease-in-out; /** Firefox **/
-    -o-transition: all 0.4s ease-in-out; /** Opera **/
+  transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.2s ease-in-out; /** Firefox **/
+    -o-transition: all 0.2s ease-in-out; /** Opera **/
 }
 
 .form__field:focus {
   border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
   padding-bottom: 30px;
-  transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 0.4s ease-in-out; /** Firefox **/
-    -o-transition: all 0.4s ease-in-out; /** Opera **/
+  transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.2s ease-in-out; /** Firefox **/
+    -o-transition: all 0.2s ease-in-out; /** Opera **/
   border: 5;
-  .buttonPost{
-    display: block;
-  }
 }
 
 .buttonPost {
@@ -67,7 +64,7 @@
 }
 
 .buttonPost:hover {
-  background-color: #D5DFDC; /* Green */
+  background-color: #D5DFDC;
   color: black;
   outline: none;
 }
