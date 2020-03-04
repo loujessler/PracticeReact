@@ -2,12 +2,14 @@ import React from 'react'
 import s from './Profile.module.css'
 import Body from './Body/Body'
 
-const Profile = () => {
+
+
+const Profile = (props) => {
   return(
     <div className={s.profile}>
       <div className={s.headerimg}>
       </div>
-      <Body />
+      <Body posts={props.posts}/>
     </div>
 );
 }

@@ -3,7 +3,7 @@
   background-color: rgba(175, 196, 190, 0.5);
   border: 0.5px solid #A69BA9;
   border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
-  max-height: 350px;
+  height: 350px;
 }
 
 .nav_box{
@@ -33,14 +33,19 @@ a{
 
 }
 
-a span{
-  /* padding: 4px; */
-}
 
-a:hover{
+a.link:hover{
   text-decoration: none;
   cursor: pointer;
-  border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
+  border-radius: 3px 3px 3px 3px; /*Закругляем уголки*/
   color: whitesmoke;
-  background: radial-gradient( 80% 20%,  firebrick, black);
+  background: radial-gradient( 80% 50%, #7a707e, black);
+}
+
+a.active{
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px 3px 3px 3px; /*Закругляем уголки*/
+  color: whitesmoke;
+  background: radial-gradient( 80% 50%, black, #7a707e);
 }
