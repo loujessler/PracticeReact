@@ -1,0 +1,19 @@
+.items{
+    /*grid-area: name;*/
+}
+
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
+    color: whitesmoke;
+    background: radial-gradient( 80% 20%,  firebrick, black);
+}
+
+a.active{
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
+    color: whitesmoke;
+    background: radial-gradient( 80% 20%, black,  firebrick);
+}

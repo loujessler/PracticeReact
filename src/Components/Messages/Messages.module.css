@@ -1,0 +1,6 @@
+.messagesBody{
+    display: grid;
+    /*grid-template-areas: "name dialog";*/
+    grid-template-columns: 2fr 10fr;
+    /*grid-template-rows: repeat(4, 10%) repeat(auto-fill, 10em);*/
+}
