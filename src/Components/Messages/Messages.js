@@ -5,11 +5,9 @@ import People from "./People/People";
 import {Route} from "react-router-dom";
 
 
-
 const Messages = (props) => {
-
-    let peopleElements = props.people.map( people => <People id={people.id} name={people.name}/>)
-    let path = `/messages/id${props.people.id}`;
+    let path = `/messages/id`;
+    let peopleElements = props.people.map(people => <People id={people.id} name={people.name} path={path}/>)
 
     return (
         <div className={s.messagesBody}>

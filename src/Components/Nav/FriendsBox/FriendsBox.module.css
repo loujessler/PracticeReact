@@ -1,0 +1,11 @@
+.friendsBox{
+  margin-top: 10px;
+}
+.items{
+  display: grid;
+  /*grid-template-rows: 1fr 1fr;*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  /*grid-template-columns: auto;*/
+  grid-gap: 5px;
+}
