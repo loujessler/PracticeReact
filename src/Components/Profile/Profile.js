@@ -9,7 +9,7 @@ const Profile = (props) => {
     <div className={s.profile}>
       <div className={s.headerimg}>
       </div>
-      <Body posts={props.posts}/>
+      <Body posts={props.posts} addPost={props.addPost}/>
     </div>
 );
 }

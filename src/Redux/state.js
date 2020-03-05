@@ -10,4 +10,13 @@ let state = {
     ]
 }
 
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        post: postMessage,
+        like:0
+    };
+    state.posts.push(newPost);
+}
+
 export default state

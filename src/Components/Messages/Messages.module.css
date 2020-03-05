@@ -1,6 +1,20 @@
 .messagesBody{
     display: grid;
-    /*grid-template-areas: "name dialog";*/
+    /*grid-template-areas: "name dialog" "name text";*/
     grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
     /*grid-template-rows: repeat(4, 10%) repeat(auto-fill, 10em);*/
+}
+
+.people{
+    box-shadow: 0 2px 7px rgba(0,0,0,0.25), 0 2px 6px rgba(0,0,0,0.22);
+    border: 0.5px solid #A69BA9;
+    border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+}
+
+.chat{
+    box-shadow: 0 2px 7px rgba(0,0,0,0.25), 0 2px 6px rgba(0,0,0,0.22);
+    border: 0.5px solid #A69BA9;
+    border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+    min-height: 500px;
 }
