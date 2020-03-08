@@ -8,8 +8,8 @@ const Nav = (props) => {
 
   return(
     <nav className={s.nav}>
-      <NavBox people={props.people}/>
-      <FriendsBox people={props.people}/>
+      <NavBox people={props.messagesPage.people}/>
+      <FriendsBox people={props.messagesPage.people}/>
     </nav>
 );
 }

@@ -4,7 +4,7 @@ import s from './Dialogs.module.css';
 const Dialogs = (props) => {
     return(
         <div className={s.dialog}>
-            {props.dialog} hi
+            {props.message} hi
         </div>
     )
 }

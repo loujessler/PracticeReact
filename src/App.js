@@ -16,7 +16,7 @@ const App = (props) => {
     return (
         <div className="app-wrapper">
             <Header/>
-            <Nav people={props.state.people}/>
+            <Nav messagesPage={props.state.messagesPage}/>
             <div className="gridContent">
                 <Route path='/profile'
                        render={() => <Profile
@@ -24,7 +24,8 @@ const App = (props) => {
                            profilePage={props.state.profilePage} />}/>
                 <Route path='/messages'
                        render={() => <Messages
-                           people={props.state.people}/>}/>
+                           dispatch={props.dispatch}
+                           messagesPage={props.state.messagesPage}/>}/>
                 <Route path='/news' component={News}/>
                 <Route path='/music' component={Music}/>
                 <Route path='/settings' component={Settings}/>
