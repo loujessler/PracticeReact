@@ -45,6 +45,7 @@
 }
 
 .buttonPost {
+  position: fixed;
   outline: none;
   background-color: white;
   position: relative;

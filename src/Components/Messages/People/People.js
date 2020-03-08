@@ -7,7 +7,7 @@ const People = (props) => {
 
     return (
         <div className={s.items}>
-            <NavLink to={`${props.path}${props.id}`} activeClassName={s.active}><span>{props.name}</span></NavLink>
+            <NavLink to={`${props.path}${props.id}`} className={s.link} activeClassName={s.active}><span>{props.name}</span></NavLink>
         </div>
     )
 }

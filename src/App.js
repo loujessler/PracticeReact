@@ -12,13 +12,19 @@ import Settings from "./Components/Settings/Settings";
 
 
 const App = (props) => {
+
     return (
         <div className="app-wrapper">
             <Header/>
             <Nav people={props.state.people}/>
             <div className="gridContent">
-                <Route path='/profile' render={() => <Profile addPost={props.addPost} posts={props.state.posts}/>}/>
-                <Route path='/messages' render={() => <Messages people={props.state.people}/>}/>
+                <Route path='/profile'
+                       render={() => <Profile
+                           dispatch={props.dispatch}
+                           profilePage={props.state.profilePage} />}/>
+                <Route path='/messages'
+                       render={() => <Messages
+                           people={props.state.people}/>}/>
                 <Route path='/news' component={News}/>
                 <Route path='/music' component={Music}/>
                 <Route path='/settings' component={Settings}/>

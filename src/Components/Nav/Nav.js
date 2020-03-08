@@ -9,7 +9,7 @@ const Nav = (props) => {
   return(
     <nav className={s.nav}>
       <NavBox people={props.people}/>
-      {/*<FriendsBox people={props.people}/>*/}
+      <FriendsBox people={props.people}/>
     </nav>
 );
 }

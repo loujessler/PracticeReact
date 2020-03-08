@@ -2,18 +2,26 @@
     /*grid-area: name;*/
 }
 
-a:hover{
+
+.link {
     text-decoration: none;
-    cursor: pointer;
-    border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
-    color: whitesmoke;
-    background: radial-gradient( 80% 20%,  firebrick, black);
+    color: black;
+    padding: 0 5%;
+    margin: 0 auto;
 }
 
-a.active{
+.link:hover {
     text-decoration: none;
     cursor: pointer;
-    border-radius: 4px 4px 4px 4px; /*Закругляем уголки*/
+    border-radius: 3px 3px 3px 3px; /*Закругляем уголки*/
     color: whitesmoke;
-    background: radial-gradient( 80% 20%, black,  firebrick);
+    background-color: #0f4c81;
+}
+
+.active {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 3px 3px 3px 3px; /*Закругляем уголки*/
+    color: whitesmoke;
+    background-color: #3D3F41;
 }

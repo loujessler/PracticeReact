@@ -7,7 +7,9 @@ const Body = (props) => {
   return(
     <div className={s.bodyProfile}>
       <Info />
-      <PostBody posts={props.posts} addPost={props.addPost}/>
+      <PostBody posts={props.profilePage.posts}
+                newPostText={props.profilePage.newPostText}
+                dispatch={props.dispatch}/>
     </div>
 );
 }

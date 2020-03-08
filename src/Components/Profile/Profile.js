@@ -9,7 +9,9 @@ const Profile = (props) => {
     <div className={s.profile}>
       <div className={s.headerimg}>
       </div>
-      <Body posts={props.posts} addPost={props.addPost}/>
+      <Body profilePage={props.profilePage}
+            newPostText={props.profilePage.newPostText}
+            dispatch={props.dispatch} />
     </div>
 );
 }
