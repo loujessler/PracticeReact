@@ -19,13 +19,9 @@ const App = (props) => {
             <Nav messagesPage={props.state.messagesPage}/>
             <div className="gridContent">
                 <Route path='/profile'
-                       render={() => <Profile
-                           dispatch={props.dispatch}
-                           profilePage={props.state.profilePage} />}/>
+                       render={() => <Profile store={props.store} />}/>
                 <Route path='/messages'
-                       render={() => <Messages
-                           dispatch={props.dispatch}
-                           messagesPage={props.state.messagesPage}/>}/>
+                       render={() => <Messages store={props.store} />}/>
                 <Route path='/news' component={News}/>
                 <Route path='/music' component={Music}/>
                 <Route path='/settings' component={Settings}/>

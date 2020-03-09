@@ -1,0 +1,29 @@
+import React from "react";
+import {sendMessageCreator, updateNewMessageBodyCreator} from "../../../Redux/messages-reducer";
+import DialogsField from "./DialogsField";
+
+
+
+const DialogsFieldContainer = (props) => {
+    let state = props.store.getState();
+    // Внутренние функции
+    let sendMessage = () => {
+        props.store.dispatch(sendMessageCreator());
+    }
+    let updateNewMessageBody = (body) => {
+        props.store.dispatch(updateNewMessageBodyCreator(body));
+    }
+    // *****************
+
+    let path = `/messages/id`;
+
+    return (
+        <DialogsField sendMessage={sendMessage}
+                      updateNewMessageBody={updateNewMessageBody}
+                      messages={state.messagesPage.messages}
+                      newMessageBody={state.messagesPage.newMessageBody}
+        />
+    )
+}
+
+export default DialogsFieldContainer;

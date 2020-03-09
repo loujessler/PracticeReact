@@ -7,17 +7,17 @@ import {sendMessageCreator, updateNewMessageBodyCreator} from "../../../Redux/me
 
 
 const DialogsField = (props) => {
-    let dialogsElements = props.messagesPage.messages.map(messages => <Dialogs id={messages.id} message={messages.message}/>);
-    let newMessageBody = props.messagesPage.newMessageBody;
+    let dialogsElements = props.messages.map(messages => <Dialogs id={messages.id} message={messages.message}/>);
+    let newMessageBody = props.newMessageBody;
     let newMessageElement = React.createRef();
 
     // Внутренние функции
     let onSendMessageClick = () => {
-        props.dispatch(sendMessageCreator());
+        props.sendMessage();
     }
     let onNewMessageChange = (e) => {
         let body = e.target.value;
-        props.dispatch(updateNewMessageBodyCreator(body));
+        props.updateNewMessageBody(body);
     }
     // *****************
 

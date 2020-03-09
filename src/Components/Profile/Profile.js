@@ -9,9 +9,7 @@ const Profile = (props) => {
     <div className={s.profile}>
       <div className={s.headerimg}>
       </div>
-      <Body profilePage={props.profilePage}
-            newPostText={props.profilePage.newPostText}
-            dispatch={props.dispatch} />
+      <Body store={props.store} />
     </div>
 );
 }
