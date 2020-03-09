@@ -7,7 +7,7 @@ const PostBody = (props) => {
     let postsElements = props.posts.map(p => <Post message={p.post} likeCounts={p.like}/>)
     // Внутренние функции
     let onAddPost = () => {
-        if (newPostElement.current.value != '') {
+        if (newPostElement.current.value !== '') {
             props.addPost();
         }
     }

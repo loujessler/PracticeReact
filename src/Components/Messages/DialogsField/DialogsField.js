@@ -2,9 +2,6 @@ import React from "react";
 import s from './DialogsField.module.css';
 import Dialogs from "./Dialogs/Dialogs";
 import {Route} from "react-router-dom";
-import {sendMessageCreator, updateNewMessageBodyCreator} from "../../../Redux/messages-reducer";
-
-
 
 const DialogsField = (props) => {
     let dialogsElements = props.messages.map(messages => <Dialogs id={messages.id} message={messages.message}/>);

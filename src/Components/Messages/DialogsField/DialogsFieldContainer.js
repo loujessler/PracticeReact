@@ -6,7 +6,7 @@ import DialogsField from "./DialogsField";
 
 const DialogsFieldContainer = (props) => {
     let state = props.store.getState();
-    // Внутренние функции
+    // Внешние функции для DialogsField
     let sendMessage = () => {
         props.store.dispatch(sendMessageCreator());
     }
@@ -14,9 +14,6 @@ const DialogsFieldContainer = (props) => {
         props.store.dispatch(updateNewMessageBodyCreator(body));
     }
     // *****************
-
-    let path = `/messages/id`;
-
     return (
         <DialogsField sendMessage={sendMessage}
                       updateNewMessageBody={updateNewMessageBody}
